@@ -1,6 +1,6 @@
-package org.akazukin.bot.store;
+package org.akazukin.plugin.repo.common;
 
-import org.akazukin.bot.store.repo.IRepository;
+import org.akazukin.plugin.repo.common.repo.IRepository;
 import org.akazukin.service.registry.SingleServiceRegistry;
 import org.jetbrains.annotations.NotNull;
 

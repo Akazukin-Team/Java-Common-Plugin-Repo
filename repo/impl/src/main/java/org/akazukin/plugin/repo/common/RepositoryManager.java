@@ -1,6 +1,6 @@
-package org.akazukin.bot.store;
+package org.akazukin.plugin.repo.common;
 
-import org.akazukin.bot.store.repo.IRepository;
+import org.akazukin.plugin.repo.common.repo.IRepository;
 import org.akazukin.service.manager.holder.ServiceManagerHolder;
 
 public class RepositoryManager<T extends IRepository<?>> extends ServiceManagerHolder<T> implements IRepositoryManager<T> {
