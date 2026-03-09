@@ -5,5 +5,5 @@ plugins {
 dependencies {
     compileOnly project(':repo:api')
 
-    api libs.akz.service
+    compileOnly libs.akz.service
 }
