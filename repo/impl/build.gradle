@@ -1,0 +1,9 @@
+plugins {
+    id 'buildlogic.java-module-conventions'
+}
+
+dependencies {
+    compileOnly project(':repo:api')
+
+    api libs.akz.service
+}

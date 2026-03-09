@@ -1,0 +1,13 @@
+plugins {
+    id 'buildlogic.java-publish-conventions'
+}
+
+jar {
+    dependsOn(':repo:api:jar')
+    dependsOn(':repo:impl:jar')
+}
+
+dependencies {
+    libFatjar project(':repo:api')
+    libFatjar project(':repo:impl')
+}
