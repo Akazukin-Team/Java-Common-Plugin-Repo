@@ -1,4 +1,4 @@
-package org.akazukin.bot.store.repo;
+package org.akazukin.plugin.repo.common.repo;
 
 public interface ITransactableRepository {
     void beginTransaction();

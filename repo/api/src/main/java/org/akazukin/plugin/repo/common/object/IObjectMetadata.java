@@ -1,4 +1,4 @@
-package org.akazukin.bot.store.object;
+package org.akazukin.plugin.repo.common.object;
 
 public interface IObjectMetadata<T extends IStoreObject> {
     String getObjectName();

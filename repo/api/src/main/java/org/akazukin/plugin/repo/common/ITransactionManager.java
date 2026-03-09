@@ -1,4 +1,4 @@
-package org.akazukin.bot.store;
+package org.akazukin.plugin.repo.common;
 
 import java.util.function.Supplier;
 

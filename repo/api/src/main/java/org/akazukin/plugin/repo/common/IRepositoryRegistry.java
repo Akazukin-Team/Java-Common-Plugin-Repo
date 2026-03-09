@@ -1,6 +1,6 @@
-package org.akazukin.bot.store;
+package org.akazukin.plugin.repo.common;
 
-import org.akazukin.bot.store.repo.IRepository;
+import org.akazukin.plugin.repo.common.repo.IRepository;
 
 public interface IRepositoryRegistry<T extends IRepository<?>> {
     <U extends T> void registerRepository(final Class<U> blueprint, final U repo);
