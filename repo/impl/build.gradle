@@ -6,4 +6,5 @@ dependencies {
     compileOnly project(':repo:api')
 
     compileOnly libs.akz.service
+    compileOnly libs.akz.loader
 }
