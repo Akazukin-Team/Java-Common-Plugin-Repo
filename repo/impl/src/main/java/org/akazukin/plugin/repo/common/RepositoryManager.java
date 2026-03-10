@@ -4,7 +4,7 @@ import org.akazukin.plugin.repo.common.repo.IRepository;
 import org.akazukin.service.manager.holder.ServiceManagerHolder;
 
 public class RepositoryManager<T extends IRepository<?>> extends ServiceManagerHolder<T> implements IRepositoryManager<T> {
-    protected RepositoryManager(final Class<T> repoType) {
+    public RepositoryManager(final Class<T> repoType) {
         super(repoType);
     }
 
