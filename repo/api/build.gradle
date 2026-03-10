@@ -4,4 +4,6 @@ plugins {
 
 dependencies {
     compileOnly libs.slf4j
+
+    compileOnly libs.akz.loader
 }

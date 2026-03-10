@@ -4,6 +4,7 @@ lombok = "1.18.42"
 jetbrains-annotation = "26.1.0"
 slf4j = "2.1.0-alpha1"
 akz-service = "5.0.0-SNAPSHOT"
+akz-loader = "1.0.0-SNAPSHOT"
 
 # JMH Libraries
 jmh-lib = "1.37"
@@ -20,6 +21,7 @@ lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
 jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrains-annotation" }
 slf4j = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 akz-service = { module = "org.akazukin:service", version.ref = "akz-service" }
+akz-loader = { module = "org.akazukin:plugin-loader", version.ref = "akz-loader" }
 
 # JMH Libraries
 jmh-core = { module = "org.openjdk.jmh:jmh-core", version.ref = "jmh-lib" }
