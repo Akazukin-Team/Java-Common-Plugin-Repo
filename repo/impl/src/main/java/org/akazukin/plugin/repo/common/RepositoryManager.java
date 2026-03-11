@@ -19,20 +19,12 @@ public class RepositoryManager<T extends IRepository<?>> extends ServiceManagerH
     }
 
     @Override
-    @SuppressWarnings("unchecked")
-    public void registerRegistry(final IRepositoryRegistry<? extends T> repo) {
-        if (!(repo instanceof RepositoryRegistry)) {
-            throw new IllegalArgumentException("The repository must be an instance: " + RepositoryRegistry.class.getName());
-        }
-        super.registerStore((RepositoryRegistry<T>) repo);
+    public void registerRegistry(final IRepositoryRegistry<T> repo) {
+        super.registerStore(repo);
     }
 
     @Override
-    @SuppressWarnings("unchecked")
-    public void unregisterRegistry(final IRepositoryRegistry<? extends T> repo) {
-        if (!(repo instanceof RepositoryRegistry)) {
-            throw new IllegalArgumentException("The repository must be an instance: " + RepositoryRegistry.class.getName());
-        }
-        super.registerStore((RepositoryRegistry<T>) repo);
+    public void unregisterRegistry(final IRepositoryRegistry<T> repo) {
+        super.registerStore(repo);
     }
 }
