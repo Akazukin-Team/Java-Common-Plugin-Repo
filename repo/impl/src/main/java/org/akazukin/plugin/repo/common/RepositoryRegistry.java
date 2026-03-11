@@ -5,10 +5,6 @@ import org.akazukin.service.registry.SingleServiceRegistry;
 import org.jetbrains.annotations.NotNull;
 
 public class RepositoryRegistry<T extends IRepository<?>> extends SingleServiceRegistry<T> implements IRepositoryRegistry<T> {
-    public RepositoryRegistry() {
-        this((Class) IRepository.class);
-    }
-
     public RepositoryRegistry(@NotNull final Class<T> repoType) {
         super(repoType);
     }
