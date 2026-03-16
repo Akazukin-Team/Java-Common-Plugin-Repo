@@ -3,6 +3,7 @@ package org.akazukin.plugin.repo.common.object;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
+import org.jetbrains.annotations.NotNull;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Getter
@@ -16,7 +17,7 @@ public class ObjectMeta<T extends IStoreObject> implements IObjectMeta<T> {
     }
 
     @Override
-    public IObjectMeta<T> renewInstance(final T object) {
+    public IObjectMeta<T> renewInstance(final @NotNull T object) {
         return new ObjectMeta<>(object, this.versionNo);
     }
 }
