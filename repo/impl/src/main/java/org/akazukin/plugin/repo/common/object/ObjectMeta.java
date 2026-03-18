@@ -25,6 +25,10 @@ public class ObjectMeta<T extends IStoreObject> implements IObjectMeta<T> {
         this.versionNo = versionNo;
     }
 
+    public ObjectMeta(@NotNull final T object, @Nullable final Long versionNo) {
+        this(object, object, versionNo);
+    }
+
     @Override
     public IObjectMeta<T> renewInstance(final @NotNull T object) {
         return new ObjectMeta<>(object, this.object, this.versionNo);
