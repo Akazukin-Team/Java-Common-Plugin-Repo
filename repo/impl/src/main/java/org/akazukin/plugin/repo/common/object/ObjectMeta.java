@@ -8,12 +8,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
 
-@FieldDefaults(level = AccessLevel.PRIVATE)
+@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 @Getter
 public class ObjectMeta<T extends IStoreObject> implements IObjectMeta<T> {
-    final T object;
-    final Long versionNo;
-    final T original;
+    T object;
+    Long versionNo;
+    T original;
 
     public ObjectMeta(@NotNull final T object) {
         this(object, null, null);
