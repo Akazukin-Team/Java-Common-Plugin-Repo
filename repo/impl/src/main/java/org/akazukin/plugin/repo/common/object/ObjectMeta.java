@@ -38,4 +38,13 @@ public class ObjectMeta<T extends IStoreObject> implements IObjectMeta<T> {
     public boolean isModified() {
         return !Objects.equals(this.object, this.original);
     }
+
+    @Override
+    public String toString() {
+        return "ObjectMeta{" +
+                "object=" + this.object +
+                ", original=" + this.original +
+                ", versionNo=" + this.versionNo +
+                '}';
+    }
 }
