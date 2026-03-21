@@ -9,8 +9,4 @@ public interface IObjectMeta<T extends IStoreObject> {
 
     @Nullable
     Long getVersionNo();
-
-    IObjectMeta<T> renewInstance(@NotNull T object);
-
-    boolean isModified();
 }
