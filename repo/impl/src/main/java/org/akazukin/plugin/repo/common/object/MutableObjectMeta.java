@@ -13,8 +13,8 @@ import java.util.Objects;
 public class MutableObjectMeta<T extends IStoreObject> extends ObjectMeta<T> implements IMutableObjectMeta<T> {
     T original;
 
-    public MutableObjectMeta(@NotNull final T object, @Nullable final Long versionNo) {
-        this(object, object, versionNo);
+    public MutableObjectMeta(@NotNull final T object) {
+        this(object, null, null);
     }
 
     public MutableObjectMeta(@NotNull final T object, @Nullable final T original, @Nullable final Long versionNo) {
